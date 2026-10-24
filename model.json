@@ -1,0 +1,13 @@
+{
+  "model": "mozc.data",
+  "bytes": 19001738,
+  "sha256": "7a47a2b3958baeb0796345aec2c3f380b1d783d6fa399c8a0c358a197bee6046",
+  "dataVersion": "24.11.oss",
+  "source": "https://github.com/google/mozc",
+  "revision": "c4b2aef7c65e61be394bacadaec200eb5b97f91c",
+  "target": "//data_manager/oss:mozc_dataset_for_oss",
+  "config": [
+    "oss_linux",
+    "release_build"
+  ]
+}
