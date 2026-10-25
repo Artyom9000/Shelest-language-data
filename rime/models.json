@@ -79,6 +79,6 @@
       "packSha256": "8ccf7249a81d080e2ce862ab9f260e856ed69076c2e6992eba27e83c7d1e9e9f"
     }
   ],
-  "binaryReproducibility": "Rime embeds process-dependent header metadata. Each published artifact has its own immutable hash; a rebuild is a new artifact, never an integrity exception.",
+  "binaryReproducibility": "Observed rebuilds differ in dictionary header checksums; the exact cause is not established. Each published artifact has its own immutable hash; a rebuild is a new artifact, never an integrity exception.",
   "compilerDllSha256": "86b4c7357d4c6d293ce5589b234d8859ca2ac30923a03bedfa3926eeaf97fb0b"
 }
