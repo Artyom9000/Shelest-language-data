@@ -1,0 +1,19 @@
+name: Rebuild pinned Rime language data
+on:
+  push:
+    paths: ['rime/**', '.github/workflows/rime.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  data:
+    runs-on: windows-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.13'}
+      - run: python rime/build.py --output release
+      # Rebuild hashes are recorded, never substituted for a published immutable model.
+      - uses: actions/upload-artifact@v4
+        with: {name: rime-1.17-rebuilt-data, path: release/}

@@ -19,3 +19,7 @@ sha256sum bazel-bin/data_manager/oss/mozc.data
 ```
 
 Upstream pins its build dependencies. The expected output hash is recorded above and in `model.json`; do not substitute a dataset merely because its format version matches. The model was verified with a native Mozc engine built from the same source revision.
+
+## Chinese Pinyin models
+
+Release rime-1.17-v1 contains complete Simplified and Traditional Pinyin data. See [build provenance and licenses](rime/README.md).
