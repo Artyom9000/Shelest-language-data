@@ -17,6 +17,7 @@ def main():
         subprocess.run([extractor,'x',str(archive),'-o'+str(compiler),'-y'],check=True)
     deployer=compiler/'dist/bin/rime_deployer.exe'
     if digest(deployer)!=catalog['compilerExeSha256']:raise ValueError('Unexpected compiler executable')
+    if digest(compiler/'dist/lib/rime.dll')!=catalog['compilerDllSha256']:raise ValueError('Unexpected compiler library')
     data=work/'data';data.mkdir(exist_ok=True);(data/'build').mkdir(exist_ok=True)
     for source in catalog['sources']:fetch(source['url'],data/source['file'],source['sha256'],source['bytes'])
     env=os.environ.copy();env['PATH']=str(compiler/'dist/lib')+os.pathsep+env.get('PATH','')
