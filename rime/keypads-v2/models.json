@@ -1,0 +1,118 @@
+{
+  "engineSourceRevision": "33e78140250125871856cdc5b42ddc6a5fcd3cd4",
+  "compilerArchive": "https://github.com/rime/librime/releases/download/1.17.0/rime-33e7814-Windows-msvc-x64.7z",
+  "compilerArchiveSha256": "7478c7caa4ff6b37de86daba1f7ce4a994a4f5ba24872a820fb2b3a9b01fed15",
+  "compilerExeSha256": "3abb72b5bb56fcafcfe925d533ae5f832c68d5a0bc9952fd0eea0682fb1ab071",
+  "sources": [
+    {
+      "repository": "rime-pinyin-simp",
+      "revision": "0c6861ef7420ee780270ca6d993d18d4101049d0",
+      "file": "pinyin_simp.dict.yaml",
+      "bytes": 1266216,
+      "sha256": "e341598343a0f0f2035bb1aafc34a7f3bb7887deeecb3f60796262aaa2983e6b",
+      "url": "https://raw.githubusercontent.com/rime/rime-pinyin-simp/0c6861ef7420ee780270ca6d993d18d4101049d0/pinyin_simp.dict.yaml"
+    },
+    {
+      "repository": "rime-luna-pinyin",
+      "revision": "56b934b099dfbeab842320f13aa8b461a6ab3e42",
+      "file": "luna_pinyin.dict.yaml",
+      "bytes": 889896,
+      "sha256": "75bcf6eb3ff62b129882ed89cc22b2d80a5347aa72bcfa2ccc839bac298e7314",
+      "url": "https://raw.githubusercontent.com/rime/rime-luna-pinyin/56b934b099dfbeab842320f13aa8b461a6ab3e42/luna_pinyin.dict.yaml"
+    },
+    {
+      "repository": "rime-essay",
+      "revision": "054920de4f54c9e5994276a96a4fc2a35cb51aa3",
+      "file": "essay.txt",
+      "bytes": 5887319,
+      "sha256": "3e8512ebaa6657e35961b1f5762060717c647e3bf471d5e3b86e783b4e934ffb",
+      "url": "https://raw.githubusercontent.com/rime/rime-essay/054920de4f54c9e5994276a96a4fc2a35cb51aa3/essay.txt"
+    }
+  ],
+  "schemas": {
+    "shelest_luna_pinyin.schema.yaml": "87b20ed8f352cd6ba25ade9ff6389406bff6dc3e78fea2169e3c59b2ce1d4d2b",
+    "shelest_luna_pinyin_9key.schema.yaml": "5f8b7d0369952eaba4e734270adaef4948c2dd78621fa9f10710c90b620f408c",
+    "shelest_luna_pinyin_9key_fuzzy.schema.yaml": "33990f7ca255a568cc6f1e686d01787fa5494a76de57807c0288552192aa0007",
+    "shelest_luna_pinyin_fuzzy.schema.yaml": "f7e63ab24be403b978e3fdb197e1b953980a37831e9a9b959444cdeac38bc569",
+    "shelest_pinyin_simp.schema.yaml": "2d1b6d8bbd86a5beff14fd262dfe45a354908a520d3340a782d35493143ec259",
+    "shelest_pinyin_simp_9key.schema.yaml": "f7f570315c709614ae36a8741c0d9bb606400e61f8c63fff73ef1f1daae37fbb",
+    "shelest_pinyin_simp_9key_fuzzy.schema.yaml": "2b0600e7ffdf1c6a493e590f5a164ef637ec0c46410bd5a580ab0d5d581d2476",
+    "shelest_pinyin_simp_fuzzy.schema.yaml": "6765aacdff0c076589e32f57d5d2e9ee94c3b86e9202ecdec2628f707989bc20"
+  },
+  "models": [
+    {
+      "language": "zh-Hans",
+      "engine": "shelest-rime-pinyin-1.17-v2",
+      "version": "rime17-keypads-v2",
+      "modelBytes": 1632828,
+      "files": {
+        "pinyin_simp.table.bin": {
+          "bytes": 1475920,
+          "sha256": "92ebf5bdee3a42302e3813183b6dcf07fff172b4f9b0709884227b96b0352b6a"
+        },
+        "pinyin_simp.prism.bin": {
+          "bytes": 4412,
+          "sha256": "395154ca013191e3b92fca23fdfc22ae120e52cfe1f0a435ec6346e4acb5ad9e"
+        },
+        "pinyin_simp.reverse.bin": {
+          "bytes": 103592,
+          "sha256": "3865501c37f899c478f229081e3b8fbdf93f397026c8ae5bd958f9dfb695fb1c"
+        },
+        "pinyin_simp_fuzzy.prism.bin": {
+          "bytes": 20968,
+          "sha256": "e584ce38cec75df67017ba1b828e065a72b615a8b824195fa3a3d76df7a2fc6e"
+        },
+        "pinyin_simp_9key.prism.bin": {
+          "bytes": 10776,
+          "sha256": "622af56c7d18a7a868fab9fb975a14a6d3b789f9d0a4ddf36d58c0963fa375a8"
+        },
+        "pinyin_simp_9key_fuzzy.prism.bin": {
+          "bytes": 17160,
+          "sha256": "37ed6722968701ef38bf8c151ee4daf075d5fdd614110c01757a019dc8196957"
+        }
+      },
+      "packBytes": 759227,
+      "packSha256": "45a1a2d1f71eb8be1942531e1f2717a8c059fccd9130ea358b0d960eeb6be1a0"
+    },
+    {
+      "language": "zh-Hant",
+      "engine": "shelest-rime-pinyin-1.17-v2",
+      "version": "rime17-keypads-v2",
+      "modelBytes": 13318144,
+      "files": {
+        "luna_pinyin.table.bin": {
+          "bytes": 13011364,
+          "sha256": "920f6c4a3f89ab56f2a756bb102c96380376da2aef7dd9818b7238bad1ffc763"
+        },
+        "luna_pinyin.prism.bin": {
+          "bytes": 4412,
+          "sha256": "a4b8cbf104a8ee5aaa4dc39f07afae07dbf6d2fa3acd71e6d9066da86f8312f2"
+        },
+        "luna_pinyin.reverse.bin": {
+          "bytes": 252760,
+          "sha256": "ab79a69aa9541b4f13af8f6eb41e34ea94093eb6f855cda243b48271bbf85e93"
+        },
+        "luna_pinyin_fuzzy.prism.bin": {
+          "bytes": 21256,
+          "sha256": "08dade09f5acb8ec2a6b45a80b11310985710430abbf880b2a939d1dcc50de9d"
+        },
+        "luna_pinyin_9key.prism.bin": {
+          "bytes": 10936,
+          "sha256": "d1ae80e42d94230975317f844c6a1e832805d3fbcbc9100c7fa87e2ff6da9786"
+        },
+        "luna_pinyin_9key_fuzzy.prism.bin": {
+          "bytes": 17416,
+          "sha256": "da3690054010305080f8fa0bfe8956cc161e5491d1cb375943d35c2aa4395088"
+        }
+      },
+      "packBytes": 6388143,
+      "packSha256": "e03570f16c29cd50acd56e1a137002396a991f6707e5170d560d3a7eaad88474"
+    }
+  ],
+  "binaryReproducibility": "Observed rebuilds differ in dictionary header checksums; the exact cause is not established. Each published artifact has its own immutable hash; a rebuild is a new artifact, never an integrity exception.",
+  "compilerDllSha256": "86b4c7357d4c6d293ce5589b234d8859ca2ac30923a03bedfa3926eeaf97fb0b",
+  "buildProvenance": {
+    "compiler": "Official librime 1.17 x64 DLL, deploy_schema through a local host JNI driver; matching pinned sources and reviewed schemas below. The public build.py calls the official deployer with the same DLL. Rebuild artifacts have new hashes.",
+    "runtimeSchemaPolicy": "Schemas are shipped and reviewed with the application. Packs contain only 6 compiled data files and their bounded manifest."
+  }
+}

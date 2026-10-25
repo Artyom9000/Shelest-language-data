@@ -1,1 +1,2 @@
 rime/schemas/*.yaml -text
+rime/keypads-v2/schemas/*.yaml -text
