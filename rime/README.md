@@ -7,3 +7,5 @@ The APK supplies fixed reviewed runtime schemas. Downloads contain only `.table.
 Build on Windows using the official pinned Rime compiler: `python rime/build.py --output release`. A system 7z executable is required. The workflow rebuilds data and records new artifact hashes; it does not overwrite the immutable published release. Observed rebuilds differ in dictionary header checksums, so rebuilds are not claimed to be byte-identical. Source and schema pins are verified before compilation.
 
 Provenance clarification: the original release metadata attributed the header differences to process-dependent metadata. That cause has not been established; only the checksum differences were observed. The tracked metadata corrects that wording without replacing any published model bytes or hashes.
+
+The newer [keypads-v2 release](keypads-v2/README.md) adds nine-key and fuzzy spelling prisms while retaining these complete dictionary sources. The v1 release is unchanged.

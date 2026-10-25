@@ -22,4 +22,4 @@ Upstream pins its build dependencies. The expected output hash is recorded above
 
 ## Chinese Pinyin models
 
-Release rime-1.17-v1 contains complete Simplified and Traditional Pinyin data. See [build provenance and licenses](rime/README.md).
+Release [rime-1.17-v2-keypads](https://github.com/Artyom9000/Shelest-language-data/releases/tag/rime-1.17-v2-keypads) contains complete Simplified and Traditional Pinyin data with normal, fuzzy, nine-key and combined spelling prisms. See [pinned sources, reviewed schemas, build recipe and licenses](rime/keypads-v2/README.md). The original [v1 data](rime/README.md) remains available for older applications.
