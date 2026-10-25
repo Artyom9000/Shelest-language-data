@@ -1,0 +1,42 @@
+name: Reproduce pinned Mozc OSS data
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  dataset:
+    runs-on: ubuntu-latest
+    timeout-minutes: 80
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.13'}
+      - uses: bazelbuild/setup-bazelisk@v3
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/bazel
+          key: mozc-oss-data-c4b2aef-v1
+      - name: Build the exact upstream dataset
+        run: |
+          git clone --filter=blob:none https://github.com/google/mozc.git build/mozc
+          git -C build/mozc checkout c4b2aef7c65e61be394bacadaec200eb5b97f91c
+          cd build/mozc/src
+          python3 build_tools/update_deps.py
+          bazelisk build --config oss_linux --config release_build --jobs=3 //data_manager/oss:mozc_dataset_for_oss
+      - name: Verify the published identity and collect notices
+        run: |
+          mkdir release
+          cp build/mozc/src/bazel-bin/data_manager/oss/mozc.data release/
+          echo '7a47a2b3958baeb0796345aec2c3f380b1d783d6fa399c8a0c358a197bee6046  mozc.data' > release/SHA256SUMS
+          cd release && sha256sum --check SHA256SUMS && cd ..
+          cp model.json release/
+          zip -j release/notices.zip README.md LICENSE-Mozc.txt DICTIONARY-NOTICES.txt UPSTREAM-CREDITS.html model.json
+      - uses: actions/upload-artifact@v4
+        with: {name: mozc-24.11-c4b2aef-data, path: release/}
+      - name: Publish only when the immutable release is absent
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ! gh release view mozc-24.11-c4b2aef >/dev/null 2>&1; then
+            gh release create mozc-24.11-c4b2aef release/mozc.data release/notices.zip release/model.json release/SHA256SUMS --title 'Mozc OSS 24.11 — c4b2aef' --notes-file README.md
+          fi
