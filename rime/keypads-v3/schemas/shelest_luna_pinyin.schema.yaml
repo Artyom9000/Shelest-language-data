@@ -1,0 +1,22 @@
+schema:
+  schema_id: shelest_luna_pinyin
+  name: Shelest Traditional Pinyin
+  version: "1"
+switches:
+  - name: ascii_mode
+    reset: 0
+engine:
+  processors: [speller, selector, navigator, express_editor]
+  segmentors: [abc_segmentor, fallback_segmentor]
+  translators: [script_translator]
+speller:
+  alphabet: abcdefghijklmnopqrstuvwxyz
+  delimiter: " '"
+translator:
+  dictionary: luna_pinyin
+  enable_user_dict: false
+  enable_sentence: true
+  enable_completion: true
+  enable_encoder: false
+menu:
+  page_size: 9

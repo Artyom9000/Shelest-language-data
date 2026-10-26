@@ -1,0 +1,136 @@
+{
+  "engineSourceRevision": "33e78140250125871856cdc5b42ddc6a5fcd3cd4",
+  "compilerArchive": "https://github.com/rime/librime/releases/download/1.17.0/rime-33e7814-Windows-msvc-x64.7z",
+  "compilerArchiveSha256": "7478c7caa4ff6b37de86daba1f7ce4a994a4f5ba24872a820fb2b3a9b01fed15",
+  "compilerExeSha256": "3abb72b5bb56fcafcfe925d533ae5f832c68d5a0bc9952fd0eea0682fb1ab071",
+  "sources": [
+    {
+      "repository": "rime-pinyin-simp",
+      "revision": "0c6861ef7420ee780270ca6d993d18d4101049d0",
+      "file": "pinyin_simp.dict.yaml",
+      "bytes": 1266216,
+      "sha256": "e341598343a0f0f2035bb1aafc34a7f3bb7887deeecb3f60796262aaa2983e6b",
+      "url": "https://raw.githubusercontent.com/rime/rime-pinyin-simp/0c6861ef7420ee780270ca6d993d18d4101049d0/pinyin_simp.dict.yaml"
+    },
+    {
+      "repository": "rime-luna-pinyin",
+      "revision": "56b934b099dfbeab842320f13aa8b461a6ab3e42",
+      "file": "luna_pinyin.dict.yaml",
+      "bytes": 889896,
+      "sha256": "75bcf6eb3ff62b129882ed89cc22b2d80a5347aa72bcfa2ccc839bac298e7314",
+      "url": "https://raw.githubusercontent.com/rime/rime-luna-pinyin/56b934b099dfbeab842320f13aa8b461a6ab3e42/luna_pinyin.dict.yaml"
+    },
+    {
+      "repository": "rime-essay",
+      "revision": "054920de4f54c9e5994276a96a4fc2a35cb51aa3",
+      "file": "essay.txt",
+      "bytes": 5887319,
+      "sha256": "3e8512ebaa6657e35961b1f5762060717c647e3bf471d5e3b86e783b4e934ffb",
+      "url": "https://raw.githubusercontent.com/rime/rime-essay/054920de4f54c9e5994276a96a4fc2a35cb51aa3/essay.txt"
+    }
+  ],
+  "schemas": {
+    "shelest_luna_pinyin.schema.yaml": "87b20ed8f352cd6ba25ade9ff6389406bff6dc3e78fea2169e3c59b2ce1d4d2b",
+    "shelest_luna_pinyin_9key.schema.yaml": "5f8b7d0369952eaba4e734270adaef4948c2dd78621fa9f10710c90b620f408c",
+    "shelest_luna_pinyin_9key_fuzzy.schema.yaml": "33990f7ca255a568cc6f1e686d01787fa5494a76de57807c0288552192aa0007",
+    "shelest_luna_pinyin_fuzzy.schema.yaml": "f7e63ab24be403b978e3fdb197e1b953980a37831e9a9b959444cdeac38bc569",
+    "shelest_pinyin_simp.schema.yaml": "2d1b6d8bbd86a5beff14fd262dfe45a354908a520d3340a782d35493143ec259",
+    "shelest_pinyin_simp_9key.schema.yaml": "f7f570315c709614ae36a8741c0d9bb606400e61f8c63fff73ef1f1daae37fbb",
+    "shelest_pinyin_simp_9key_fuzzy.schema.yaml": "2b0600e7ffdf1c6a493e590f5a164ef637ec0c46410bd5a580ab0d5d581d2476",
+    "shelest_pinyin_simp_fuzzy.schema.yaml": "6765aacdff0c076589e32f57d5d2e9ee94c3b86e9202ecdec2628f707989bc20",
+    "shelest_luna_pinyin_9key_exact.schema.yaml": "b2b2761379b3b5f8b8d6b60be3f5aeb7639e4dfb48f18ac79d39f12ba00e31f3",
+    "shelest_luna_pinyin_9key_exact_fuzzy.schema.yaml": "cc4ad5eef3a4aa6c59bd6af6bd8035bf0e9d076556bea9e1a516bed465e14e25",
+    "shelest_pinyin_simp_9key_exact.schema.yaml": "6030887b9f806f8b6f9b60e4fa7f6efc56e776ff144be516970d36a8bdfef8a9",
+    "shelest_pinyin_simp_9key_exact_fuzzy.schema.yaml": "5a1f101545e0ef6376dad70a664e750dc82a0e10c67ba2e0d5da8576fae217d6"
+  },
+  "models": [
+    {
+      "language": "zh-Hans",
+      "engine": "shelest-rime-pinyin-1.17-v3",
+      "version": "rime17-exact-v3",
+      "files": {
+        "pinyin_simp.table.bin": {
+          "bytes": 1475920,
+          "sha256": "92ebf5bdee3a42302e3813183b6dcf07fff172b4f9b0709884227b96b0352b6a"
+        },
+        "pinyin_simp.prism.bin": {
+          "bytes": 4412,
+          "sha256": "5055523e98d89044afaf8d45e62b16cc0e9702a806d0b954f7cdc0635d1c8536"
+        },
+        "pinyin_simp.reverse.bin": {
+          "bytes": 103592,
+          "sha256": "3865501c37f899c478f229081e3b8fbdf93f397026c8ae5bd958f9dfb695fb1c"
+        },
+        "pinyin_simp_fuzzy.prism.bin": {
+          "bytes": 20968,
+          "sha256": "27438cfa3f14c9bc0b968713d1d56e13a69ac58beb8663405869280b87a0620a"
+        },
+        "pinyin_simp_9key.prism.bin": {
+          "bytes": 10776,
+          "sha256": "ed56fdea89aebfa7406991afd7348a53a8c9d64953435af55d673f5f2da51a8e"
+        },
+        "pinyin_simp_9key_fuzzy.prism.bin": {
+          "bytes": 17160,
+          "sha256": "fcbec111694dd986f4dc580b40966a255b463725feabe3e5186767991d61b68a"
+        },
+        "pinyin_simp_9key_exact.prism.bin": {
+          "bytes": 24832,
+          "sha256": "02549d25227ef9ee04117b4f3626a85377556fbbb08ef9b4d80eab76eb192e13"
+        },
+        "pinyin_simp_9key_exact_fuzzy.prism.bin": {
+          "bytes": 31216,
+          "sha256": "28303ac29da1fb635533ff1f2bafd6026958308aa0159ded4bb45faed8bfe367"
+        }
+      },
+      "packBytes": 773970,
+      "packSha256": "db6873adff69d44fde369fdd990fc5d260932894eddca88b0b76ba304d839c13"
+    },
+    {
+      "language": "zh-Hant",
+      "engine": "shelest-rime-pinyin-1.17-v3",
+      "version": "rime17-exact-v3",
+      "files": {
+        "luna_pinyin.table.bin": {
+          "bytes": 13011364,
+          "sha256": "920f6c4a3f89ab56f2a756bb102c96380376da2aef7dd9818b7238bad1ffc763"
+        },
+        "luna_pinyin.prism.bin": {
+          "bytes": 4412,
+          "sha256": "8d1b2a54035b473ce8a22baf742700fd67ae48482cb95afcdda87e14c1db7a24"
+        },
+        "luna_pinyin.reverse.bin": {
+          "bytes": 252760,
+          "sha256": "ab79a69aa9541b4f13af8f6eb41e34ea94093eb6f855cda243b48271bbf85e93"
+        },
+        "luna_pinyin_fuzzy.prism.bin": {
+          "bytes": 21256,
+          "sha256": "0d999b9b1bffd9fac762f7781831aa7c3804a242434ffd7fb75cda9c728efa8e"
+        },
+        "luna_pinyin_9key.prism.bin": {
+          "bytes": 10936,
+          "sha256": "a4e994fee2d4b68fbd07a6eabd0aaae0bfe243d2cb51dcf2be762a50dadcb849"
+        },
+        "luna_pinyin_9key_fuzzy.prism.bin": {
+          "bytes": 17416,
+          "sha256": "71cef0088b9a4f11eba9fa703b8bf297f93186431ea52ba075b6f4d547ac7f15"
+        },
+        "luna_pinyin_9key_exact.prism.bin": {
+          "bytes": 25208,
+          "sha256": "f53cb40e75b966f33c6bbf3f4f41a92e1a7776ffdc10f0c38786e05b8be6ba42"
+        },
+        "luna_pinyin_9key_exact_fuzzy.prism.bin": {
+          "bytes": 31688,
+          "sha256": "040e4882abeaead51489e6837e3e4264af11d8743a53a77818bb949f7117549c"
+        }
+      },
+      "packBytes": 6403059,
+      "packSha256": "21fc8540ffa8a518474f1d174b105da9120728839e936880f42a2068b5c77143"
+    }
+  ],
+  "binaryReproducibility": "Observed rebuilds differ in dictionary header checksums; the exact cause is not established. Each published artifact has its own immutable hash; a rebuild is a new artifact, never an integrity exception.",
+  "compilerDllSha256": "86b4c7357d4c6d293ce5589b234d8859ca2ac30923a03bedfa3926eeaf97fb0b",
+  "buildProvenance": {
+    "compiler": "Official pinned librime 1.17 deployer and DLL. build.py compiles all 12 reviewed schemas against complete pinned dictionaries.",
+    "runtimeSchemaPolicy": "Schemas ship in the app. v3 packs contain only 8 compiled data files and a bounded manifest."
+  }
+}
